@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Garamond Regular";
+    src:
+      url("fonts/GARA.TTF");
+    font-weight: regular;
+  }
+
+@font-face {
+    font-family: "Garamond Bold";
+    src:
+      url("fonts/GARABD.TTF");
+    font-weight: bold;
+  }
+
+@font-face {
+    font-family: "Garamond Italic";
+    src:
+      url("fonts/GARAIT.TTF");
+    font-weight: italic;
+  }
+  
+#logo {
+    font-size: 5vh;
+}
+
+body {
+    background-image: url("assets/bg.gif");
+    background-repeat: no-repeat;
+    background-size: 1600px 100vh;
+    background-position: center 0px;
+    font-family: "Garamond Regular";
+    overflow: hidden;
+}
+
