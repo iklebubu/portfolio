@@ -7,8 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
         infoDiv.classList.toggle('show');
 
         // Set the top and left properties based on cursor coordinates
-        infoDiv.style.top = (event.clientY + window.scrollY + 64) + 'px';
-        infoDiv.style.left = event.clientX + 'px';
+        // If cursor x + div greater than right screen
+        if((Number(event.clientX) + infoDiv.offsetWidth) > 
+        (Number(window.innerWidth))) {
+            infoDiv.style.left = event.clientX - infoDiv.offsetWidth + 'px';
+        } else {
+          infoDiv.style.left = event.clientX + 'px';
+        }
+
+        // If cursor y + div greater than right screen
+        if((Number(event.clientY) + infoDiv.offsetHeight) > 
+        (Number(window.innerHeight))) {
+            infoDiv.style.top = event.clientY - infoDiv.offsetHeight + 'px';
+        } else {
+          infoDiv.style.top = event.clientY + 'px';
+        }
+
+
+
 
         // Stop the click event propagation to prevent it from immediately closing the div
         event.stopPropagation();

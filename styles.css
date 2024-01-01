@@ -26,9 +26,16 @@
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #bg {
   position: relative;
-  top: -75px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 body {
@@ -52,6 +59,11 @@ body {
   top: 200px;
 }
 
+#info:hover {
+  cursor: none;
+}
+
+
 #about {
   margin: 0;
 }
@@ -60,10 +72,38 @@ body {
   display: none;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:600px) {
   #bg {
-    width: 100%;
-    top: 25%;
+    width: 150%;
+    object-fit: contain;
+    left: -95px;
+  }
+  #info {
+    width: 200px;
+  }
+
+  html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+}
+
+@media screen and (max-height:600px) {
+  #info {
+    width: 400px;
+  }
+
+  html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
   }
 }
 
