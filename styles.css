@@ -19,18 +19,51 @@
     font-weight: italic;
   }
 
-  #container {
-    width: 100vw;
-    height: 100vh;
-    cursor: url("assets/cursor.png"), auto;
-  }
+#container {
+  width: 100vw;
+  height: 100vh;
+  cursor: url("assets/cursor.png"), auto;
+  position: relative;
+}
+
+#bg {
+  position: relative;
+  top: -75px;
+}
 
 body {
-    background-image: url("assets/bg.gif");
+   /* background-image: url("assets/bg.gif");
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
-    background-position: center -60px;
+    background-position: center -70px;*/
     font-family: "Garamond Regular";
     overflow: hidden;
+    margin: 0;
+}
+
+#info {
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  z-index: 2;
+  background: red;
+  color: white;
+  font-family: Garamond Bold;
+  top: 200px;
+}
+
+#about {
+  margin: 0;
+}
+
+.show {
+  display: none;
+}
+
+@media screen and (max-width:980px) {
+  #bg {
+    width: 100%;
+    top: 25%;
+  }
 }
 
