@@ -22,7 +22,7 @@
 #container {
   width: 100vw;
   height: 100vh;
-  cursor: url("assets/cursor.png"), auto;
+  cursor: url("assets/cursor\ exp.png"), auto;
   position: relative;
 }
 
@@ -53,19 +53,21 @@ body {
   width: 300px;
   font-size: 20px;
   z-index: 2;
-  background: red;
+  background: blue;
   color: white;
   font-family: Garamond Bold;
   top: 200px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 255, 0.4) 5px 5px, rgba(49, 18, 224, 0.3) 10px 10px, rgba(35, 28, 238, 0.2) 15px 15px, rgba(53, 46, 240, 0.1) 20px 20px, rgba(69, 46, 240, 0.05) 25px 25px;
 }
 
 #info:hover {
-  cursor: none;
+  /*cursor: none;*/
 }
 
 
 #about {
-  margin: 0;
+  margin: 10px;
 }
 
 .show {
@@ -77,9 +79,11 @@ body {
     width: 150%;
     object-fit: contain;
     left: -95px;
+    top: auto;
   }
   #info {
-    width: 200px;
+    width: 230px;
+    height: 400px;
   }
 
   html, body {
@@ -94,7 +98,7 @@ body {
 
 @media screen and (max-height:600px) {
   #info {
-    width: 400px;
+    width: 420px;
   }
 
   html, body {
