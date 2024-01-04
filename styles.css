@@ -31,6 +31,11 @@ a {
   color: white;
 }
 
+a:hover {
+  cursor: none;
+  color: red;
+}
+
 #bg {
   position: relative;
   width: 100%;
@@ -74,7 +79,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) and (min-height:600px) {
   #bg {
     width: 150%;
     object-fit: contain;
@@ -83,7 +88,6 @@ body {
   }
   #info {
     width: 230px;
-    height: 400px;
   }
 
   html, body {
@@ -96,9 +100,40 @@ body {
   }
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:600px) and (min-width:600px){
+  
   #info {
     width: 420px;
+  }
+
+  html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+}
+
+@media screen and (max-height:600px) and (max-width:600px){
+  #info {
+  }
+
+  html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+}
+
+@media screen and (max-width:250px){
+  #info {
+    width: 90px;
+    font-size: 15px;
   }
 
   html, body {
