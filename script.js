@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     var infoDiv = document.getElementById('info');
     var containerDiv = document.getElementById('container');
 
@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded', function () {
       infoDiv.addEventListener('click', function (event) {
         event.stopPropagation();
       });
-});
+});*/
+
