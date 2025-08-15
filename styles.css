@@ -5,6 +5,13 @@
     font-weight: regular;
   }
 
+    @font-face {
+    font-family: "Geist Light";
+    src:
+      url("fonts/Geist-Light.ttf");
+    font-weight: regular;
+  }
+
   @font-face {
     font-family: "CirrusCumulus";
     src:
@@ -44,6 +51,7 @@ a:hover {
   background-position: center;
   background-attachment: fixed;
   z-index: 0;
+  filter: brightness(80%);
 }
 
 body {
@@ -61,7 +69,7 @@ body {
   z-index: 999;
   left: 2%;
   color: white;
-  font-family: "Geist Regular";
+  font-family: "Geist Light";
   font-size: 35px;
   margin-right: 15%;
 }
@@ -72,7 +80,7 @@ body {
   position: relative;
   z-index: 999;
   left: 2%; /* Adjust horizontal positioning */
-  font-family: "CirrusCumulus";
+  font-family: "Geist Regular";
   font-size: 40px;
   gap: 4vh; /* Optional: space between the two links */
 }
@@ -100,81 +108,3 @@ body {
   border-radius: 50%; /* Makes the border a circle */
   text-align: center;
 }
-
-#info:hover {
-  /*cursor: none;*/
-}
-
-
-#about {
-  margin: 10px;
-}
-
-.show {
-  display: none;
-}
-/**
-@media screen and (max-width:600px) and (min-height:600px) {
-  #bg {
-  }
-  #info {
-    width: 230px;
-  }
-
-  html, body {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-  }
-}
-
-@media screen and (max-height:600px) and (min-width:600px){
-  
-  #info {
-    width: 420px;
-  }
-
-  html, body {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-  }
-}
-
-@media screen and (max-height:600px) and (max-width:600px){
-  #info {
-  }
-
-  html, body {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-  }
-}
-
-@media screen and (max-width:250px){
-  #info {
-    width: 90px;
-    font-size: 15px;
-  }
-
-  html, body {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  body {
-    position: relative;
-  }
-}
-  **/
-
